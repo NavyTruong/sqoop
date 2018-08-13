@@ -39,24 +39,6 @@ public abstract class OraOopOracleDataChunk implements Writable {
     return "";
   }
 
-  @Override
-  public String toString() {
-
-    String result = super.toString();
-    for (Field field : this.getClass().getDeclaredFields()) {
-      try {
-        Object fieldValue = field.get(this);
-        result +=
-            String.format("\n\t%s = %s", field.getName(),
-                (fieldValue == null ? "null" : fieldValue.toString()));
-      } catch (IllegalAccessException ex) {
-        // Ignore this exception.
-      }
-    }
-
-    return result;
-  }
-
   public String getId() {
     return id;
   }
