@@ -75,10 +75,4 @@ public class OraOopOracleDataChunkPartition extends OraOopOracleDataChunk {
     return sb.toString();
   }
 
-  public String toString(){
-    StringBuilder result = new StringBuilder();
-    result.append("\n\t isSubPartition = " + isSubPartition);
-    result.append("\n\t blocks = " + blocks);
-    return result.toString();
-  }
 }
