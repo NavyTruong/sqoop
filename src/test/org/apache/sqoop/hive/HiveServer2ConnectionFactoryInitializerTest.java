@@ -23,16 +23,18 @@ import org.apache.hadoop.security.UserGroupInformation;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.db.JdbcConnectionFactory;
 import org.apache.sqoop.db.decorator.KerberizedConnectionFactoryDecorator;
+import org.apache.sqoop.testcategories.IntegrationTests;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
+@Category(IntegrationTests.class)
 public class HiveServer2ConnectionFactoryInitializerTest {
 
   private static final String TEST_HS2_URL = "jdbc:hive2://myhost:10000/default";

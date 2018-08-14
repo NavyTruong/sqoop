@@ -22,6 +22,7 @@ import org.apache.sqoop.ConnFactory;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.manager.ConnManager;
 import org.apache.sqoop.metastore.JobData;
+import org.apache.sqoop.testcategories.IntegrationTests;
 import org.apache.sqoop.tool.ImportTool;
 import com.google.common.collect.ObjectArrays;
 import org.apache.commons.logging.Log;
@@ -34,6 +35,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.sqoop.SqoopJobDataPublisher;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.experimental.categories.Category;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,6 +54,7 @@ import static org.junit.Assert.fail;
 /**
  * Class that implements common methods required for tests.
  */
+@Category(IntegrationTests.class)
 public abstract class BaseSqoopTestCase {
 
   public static class DummyDataPublisher extends SqoopJobDataPublisher {

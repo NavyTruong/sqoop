@@ -19,6 +19,7 @@
 package org.apache.sqoop.credentials;
 
 import org.apache.sqoop.SqoopOptions;
+import org.apache.sqoop.testcategories.ThirdPartyTests;
 import org.apache.sqoop.testutil.BaseSqoopTestCase;
 import org.apache.sqoop.testutil.CommonArgs;
 
@@ -33,6 +34,7 @@ import org.apache.sqoop.util.password.CredentialProviderHelper;
 import org.apache.sqoop.util.password.CredentialProviderPasswordLoader;
 import org.apache.sqoop.util.password.CryptoFileLoader;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

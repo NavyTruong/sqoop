@@ -46,11 +46,14 @@ import org.apache.accumulo.core.data.Value;
 import org.apache.accumulo.minicluster.MiniAccumuloCluster;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.sqoop.testcategories.IntegrationTests;
+import org.apache.sqoop.testcategories.ThirdPartyTests;
 import org.junit.After;
 import org.junit.Before;
 
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.apache.sqoop.testutil.ImportJobTestCase;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -61,6 +64,7 @@ import static org.junit.Assert.assertNull;
  * These test use the MiniAccumuloCluster.  They are
  * absolutely not thread safe.
  */
+@Category(IntegrationTests.class)
 public abstract class AccumuloTestCase extends ImportJobTestCase {
   private static final String ACCUMULO_USER="root";
   private static final String ACCUMULO_PASSWORD="rootroot";
