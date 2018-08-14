@@ -169,8 +169,8 @@ class OraOopDBInputSplit extends DBInputFormat.DBInputSplit {
       result.append(String.format(
           "Split[%s] includes the Oracle data-chunks:", this.splitId));
       for (OraOopOracleDataChunk dataChunk : getDataChunks()) {
-        result.append(" \n \t Data chunk info:");
-        result.append(dataChunk.toString() + " ");
+        result.append("\n\t Data chunk info:");
+        result.append(dataChunk.toString());
       }
     }
     return result.toString();

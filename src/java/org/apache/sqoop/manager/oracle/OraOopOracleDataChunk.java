@@ -18,8 +18,6 @@
 
 package org.apache.sqoop.manager.oracle;
 
-import java.lang.reflect.Field;
-
 import org.apache.hadoop.io.Writable;
 
 /**

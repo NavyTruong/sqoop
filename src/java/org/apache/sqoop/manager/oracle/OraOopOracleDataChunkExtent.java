@@ -21,7 +21,6 @@ package org.apache.sqoop.manager.oracle;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-
 import org.apache.hadoop.io.Text;
 
 /**
@@ -41,7 +40,6 @@ public class OraOopOracleDataChunkExtent extends OraOopOracleDataChunk {
   OraOopOracleDataChunkExtent(String id, int oracleDataObjectId,
       int relativeDatafileNumber, long startBlockNumber,
       long finishBlockNumber) {
-
     this.setId(id);
     this.oracleDataObjectId = oracleDataObjectId;
     this.relativeDatafileNumber = relativeDatafileNumber;
@@ -93,10 +91,11 @@ public class OraOopOracleDataChunkExtent extends OraOopOracleDataChunk {
 
   public String toString(){
     StringBuilder result = new StringBuilder();
-    result.append("\n\t\t oracleDataObjectId = " + oracleDataObjectId);
-    result.append("\n\t\t relativeDatafileNumber = " + relativeDatafileNumber);
-    result.append("\n\t\t startBlockNumber = " + startBlockNumber);
-    result.append("\n\t\t finishBlockNumber = " + finishBlockNumber);
+    result.append("\n\t\t id = ").append(super.getId());
+    result.append("\n\t\t oracleDataObjectId = ").append(oracleDataObjectId);
+    result.append("\n\t\t relativeDatafileNumber = ").append(relativeDatafileNumber);
+    result.append("\n\t\t startBlockNumber = ").append(startBlockNumber);
+    result.append("\n\t\t finishBlockNumber = ").append(finishBlockNumber);
     return result.toString();
   }
 }

@@ -37,7 +37,7 @@ public class OraOopOracleDataChunkPartition extends OraOopOracleDataChunk {
   }
 
   OraOopOracleDataChunkPartition(String partitionName, boolean isSubPartition,
-      long blocks) {
+                                 long blocks) {
     this.setId(partitionName);
     this.isSubPartition = isSubPartition;
     this.blocks = blocks;
@@ -77,8 +77,9 @@ public class OraOopOracleDataChunkPartition extends OraOopOracleDataChunk {
 
   public String toString(){
     StringBuilder result = new StringBuilder();
-    result.append("\n\t isSubPartition = " + isSubPartition);
-    result.append("\n\t blocks = " + blocks);
+    result.append("\n\t\t id = ").append(super.getId());
+    result.append("\n\t\t isSubPartition = ").append(isSubPartition);
+    result.append("\n\t\t blocks = ").append(blocks);
     return result.toString();
   }
 }
