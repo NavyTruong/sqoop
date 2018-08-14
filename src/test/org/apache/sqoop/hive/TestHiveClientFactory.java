@@ -22,15 +22,17 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.db.JdbcConnectionFactory;
 import org.apache.sqoop.manager.ConnManager;
+import org.apache.sqoop.testcategories.UnitTests;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
+@Category(UnitTests.class)
 public class TestHiveClientFactory {
 
   private static final String TEST_HS2_URL = "jdbc:hive2://myhost:10000/default";
