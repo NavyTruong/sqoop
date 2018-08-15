@@ -40,6 +40,7 @@ public class OraOopOracleDataChunkExtent extends OraOopOracleDataChunk {
   OraOopOracleDataChunkExtent(String id, int oracleDataObjectId,
       int relativeDatafileNumber, long startBlockNumber,
       long finishBlockNumber) {
+
     this.setId(id);
     this.oracleDataObjectId = oracleDataObjectId;
     this.relativeDatafileNumber = relativeDatafileNumber;
@@ -91,7 +92,7 @@ public class OraOopOracleDataChunkExtent extends OraOopOracleDataChunk {
 
   public String toString(){
     StringBuilder result = new StringBuilder();
-    result.append("\n\t\t id = ").append(super.getId());
+    result.append("\n\t\t id = ").append(getId());
     result.append("\n\t\t oracleDataObjectId = ").append(oracleDataObjectId);
     result.append("\n\t\t relativeDatafileNumber = ").append(relativeDatafileNumber);
     result.append("\n\t\t startBlockNumber = ").append(startBlockNumber);
