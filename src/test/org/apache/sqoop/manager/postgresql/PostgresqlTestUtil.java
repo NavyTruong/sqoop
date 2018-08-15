@@ -18,6 +18,11 @@
 
 package org.apache.sqoop.manager.postgresql;
 
+import org.apache.sqoop.testcategories.PostgresqlTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
+import org.junit.experimental.categories.Category;
+
+@Category({ThirdPartyTest.class, PostgresqlTest.class})
 public class PostgresqlTestUtil {
 
   public static final String HOST_URL = System.getProperty(

@@ -41,6 +41,7 @@ import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.metastore.JobData;
 import org.apache.sqoop.testutil.BaseSqoopTestCase;
 import org.apache.sqoop.util.ImportException;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

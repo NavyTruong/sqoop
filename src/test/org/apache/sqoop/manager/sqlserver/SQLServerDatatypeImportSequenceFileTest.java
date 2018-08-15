@@ -30,6 +30,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.StringUtils;
+import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -37,6 +39,7 @@ import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.testutil.ManagerCompatTestCase;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestDataFileParser.DATATYPES;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestData.KEY_STRINGS;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -63,6 +66,7 @@ import static org.junit.Assert.fail;
  *   Set these through -Dsqoop.test.sqlserver.connectstring.host_url, -Dsqoop.test.sqlserver.database and
  *   -Dms.sqlserver.password
  */
+@Category({ThirdPartyTest.class, SqlServerTest.class})
 public class SQLServerDatatypeImportSequenceFileTest extends
     ManagerCompatTestCase {
 

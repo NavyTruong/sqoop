@@ -22,7 +22,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.db.JdbcConnectionFactory;
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -48,7 +48,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@Category(UnitTests.class)
+@Category(UnitTest.class)
 public class TestHiveServer2Client {
 
   @Rule

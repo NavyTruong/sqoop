@@ -18,7 +18,7 @@
 
 package org.apache.sqoop.accumulo;
 
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -30,7 +30,7 @@ import static org.junit.Assert.assertTrue;
  * test cases) and that when in fake not present mode, the method returns
  * false.
  */
-@Category(UnitTests.class)
+@Category(UnitTest.class)
 public class TestAccumuloUtil {
 
   @Test

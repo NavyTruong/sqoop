@@ -21,6 +21,9 @@ package org.apache.sqoop.metastore.oracle;
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
 import org.apache.sqoop.metastore.SavedJobsTestBase;
 import org.apache.sqoop.manager.JdbcDrivers;
+import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test of GenericJobStorage compatibility with Oracle
@@ -42,6 +45,7 @@ import org.apache.sqoop.manager.JdbcDrivers;
  *   and -Dsqoop.test.oracle.password respectively
  */
 
+@Category({ThirdPartyTest.class, OracleTest.class})
 public class OracleSavedJobsTest extends SavedJobsTestBase {
 
     public OracleSavedJobsTest() {

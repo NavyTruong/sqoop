@@ -19,6 +19,8 @@
 package org.apache.sqoop.metastore.hsqldb;
 
 import org.apache.sqoop.metastore.JobToolTestBase;
+import org.apache.sqoop.testcategories.HsqldbTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that the Job Tool works in Hsqldb
@@ -29,7 +31,7 @@ import org.apache.sqoop.metastore.JobToolTestBase;
  *
  * This uses JDBC to store and retrieve metastore data from a local Hsqldb server
  */
-
+@Category(HsqldbTest.class)
 public class HsqldbJobToolTest extends JobToolTestBase {
 
     public HsqldbJobToolTest() {

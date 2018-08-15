@@ -24,7 +24,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.compress.CompressionCodec;
 import org.apache.hadoop.io.compress.GzipCodec;
 
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -38,7 +38,7 @@ import org.junit.rules.ExpectedException;
 /**
  * Test looking up codecs by name.
  */
-@Category(UnitTests.class)
+@Category(UnitTest.class)
 public class TestCodecMap  {
 
 

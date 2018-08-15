@@ -20,18 +20,20 @@ package org.apache.sqoop.manager.hsqldb;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.sqoop.testcategories.HsqldbTest;
 import org.apache.sqoop.testutil.ArgumentArrayBuilder;
 import org.apache.sqoop.testutil.AvroTestUtils;
 import org.apache.sqoop.testutil.ImportJobTestCase;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.rules.ExpectedException;
 
 import java.io.IOException;
 import java.util.List;
 
-
+@Category(HsqldbTest.class)
 public class TestHsqldbAvroPadding extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.getLog(

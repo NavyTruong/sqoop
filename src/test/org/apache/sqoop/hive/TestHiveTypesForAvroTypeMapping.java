@@ -19,7 +19,7 @@
 package org.apache.sqoop.hive;
 
 import org.apache.avro.Schema;
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
@@ -31,7 +31,7 @@ import java.util.Arrays;
 import static org.apache.sqoop.hive.HiveTypes.toHiveType;
 import static org.junit.Assert.*;
 
-@Category(UnitTests.class)
+@Category(UnitTest.class)
 @RunWith(Parameterized.class)
 public class TestHiveTypesForAvroTypeMapping {
 

@@ -20,6 +20,8 @@ package org.apache.sqoop.metastore.hsqldb;
 
 import org.apache.sqoop.metastore.SavedJobsTestBase;
 import org.apache.sqoop.manager.JdbcDrivers;
+import org.apache.sqoop.testcategories.HsqldbTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test of GenericJobStorage compatibility with Hsqldb
@@ -31,6 +33,7 @@ import org.apache.sqoop.manager.JdbcDrivers;
  * This uses JDBC to store and retrieve metastore data from a local Hsqldb server
  */
 
+@Category(HsqldbTest.class)
 public class HsqldbSavedJobsTest extends SavedJobsTestBase {
 
     public HsqldbSavedJobsTest() {

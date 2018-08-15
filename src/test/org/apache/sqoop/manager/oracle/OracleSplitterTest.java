@@ -20,6 +20,8 @@ package org.apache.sqoop.manager.oracle;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
+import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.sqoop.testutil.ImportJobTestCase;
 import org.apache.commons.logging.Log;
@@ -27,6 +29,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.commons.io.FileUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,6 +42,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Test various custom splitters for Oracle.
  */
+@Category({ThirdPartyTest.class, OracleTest.class})
 public class OracleSplitterTest extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.getLog(

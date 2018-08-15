@@ -32,12 +32,15 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.manager.CubridManager;
+import org.apache.sqoop.testcategories.CubridTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
 import org.junit.After;
 import org.junit.Before;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.TestExport;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -67,6 +70,7 @@ import static org.junit.Assert.fail;
  *   $csql -u dba SQOOPCUBRIDTEST
  *   csql>CREATE USER SQOOPUSER password 'PASSWORD';
  */
+@Category({ThirdPartyTest.class, CubridTest.class})
 public class CubridManagerExportTest extends TestExport {
 
   public static final Log LOG = LogFactory.getLog(

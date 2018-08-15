@@ -20,6 +20,9 @@ package org.apache.sqoop.metastore.oracle;
 
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
 import org.apache.sqoop.metastore.JobToolTestBase;
+import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that the Job Tool works in Oracle
@@ -41,6 +44,7 @@ import org.apache.sqoop.metastore.JobToolTestBase;
  *   and -Dsqoop.test.oracle.password respectively
  */
 
+@Category({ThirdPartyTest.class, OracleTest.class})
 public class OracleJobToolTest extends JobToolTestBase {
 
     public OracleJobToolTest() {

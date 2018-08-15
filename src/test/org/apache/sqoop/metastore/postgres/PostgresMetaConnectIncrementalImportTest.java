@@ -19,6 +19,9 @@
 package org.apache.sqoop.metastore.postgres;
 
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
+import org.apache.sqoop.testcategories.PostgresqlTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that Incremental-Import values are stored correctly in PostgreSQL
@@ -36,6 +39,7 @@ import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
  *   -Dsqoop.test.postgresql.username and -Dsqoop.test.postgresql.password respectively
  */
 
+@Category({ThirdPartyTest.class, PostgresqlTest.class})
 public class PostgresMetaConnectIncrementalImportTest extends MetaConnectIncrementalImportTestBase {
 
     private static final String HOST_URL = System.getProperty("sqoop.test.postgresql.connectstring.host_url",

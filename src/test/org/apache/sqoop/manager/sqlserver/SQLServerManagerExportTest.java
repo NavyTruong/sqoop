@@ -19,6 +19,8 @@ package org.apache.sqoop.manager.sqlserver;
 
 import org.apache.sqoop.ConnFactory;
 import org.apache.sqoop.SqoopOptions;
+import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -28,6 +30,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -46,6 +49,7 @@ import static org.junit.Assert.fail;
 /**
  * Please see instructions in SQLServerManagerImportTest.
  */
+@Category({ThirdPartyTest.class, SqlServerTest.class})
 public class SQLServerManagerExportTest extends ExportJobTestCase {
 
     public static final Log LOG = LogFactory.getLog(

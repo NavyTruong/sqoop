@@ -18,7 +18,7 @@
 
 package org.apache.sqoop.hcat;
 
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Before;
 
 import org.apache.sqoop.SqoopOptions;
@@ -34,7 +34,7 @@ import org.junit.rules.ExpectedException;
 /**
  * Test basic HCatalog related features.
  */
-@Category(UnitTests.class)
+@Category(UnitTest.class)
 public class TestHCatalogBasic {
 
   private static ImportTool importTool;

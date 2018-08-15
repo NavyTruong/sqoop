@@ -19,6 +19,8 @@
 package org.apache.sqoop.metastore.hsqldb;
 
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
+import org.apache.sqoop.testcategories.HsqldbTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that Incremental-Import values are stored correctly in Hsqldb
@@ -30,6 +32,7 @@ import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
  * This uses JDBC to store and retrieve metastore data from a local Hsqldb server
  */
 
+@Category(HsqldbTest.class)
 public class HsqldbMetaConnectIncrementalImportTest extends MetaConnectIncrementalImportTestBase {
 
     public HsqldbMetaConnectIncrementalImportTest() {

@@ -19,6 +19,9 @@
 package org.apache.sqoop.metastore.db2;
 
 import org.apache.sqoop.metastore.JobToolTestBase;
+import org.apache.sqoop.testcategories.Db2Test;
+import org.apache.sqoop.testcategories.ThirdPartyTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that the Job Tool works in DB2
@@ -40,6 +43,7 @@ import org.apache.sqoop.metastore.JobToolTestBase;
  *   -Dsqoop.test.db2.connectstring.username and -Dsqoop.test.db2.connectstring.password respectively
  */
 
+@Category({Db2Test.class, ThirdPartyTest.class})
 public class DB2JobToolTest extends JobToolTestBase {
 
     private static final String HOST_URL = System.getProperty(
