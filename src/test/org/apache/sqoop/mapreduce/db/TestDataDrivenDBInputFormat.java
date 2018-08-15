@@ -35,11 +35,11 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.mapreduce.DBWritable;
-import org.apache.sqoop.mapreduce.db.DataDrivenDBInputFormat;
-import org.apache.sqoop.mapreduce.db.DBConfiguration;
+import org.apache.sqoop.testcategories.IntegrationTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -47,6 +47,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Test aspects of DataDrivenDBInputFormat.
  */
+@Category(IntegrationTest.class)
 public class TestDataDrivenDBInputFormat {
 
   private static final Log LOG = LogFactory.getLog(

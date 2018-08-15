@@ -18,7 +18,7 @@
 
 package org.apache.sqoop.db;
 
-import org.apache.sqoop.testcategories.UnitTests;
+import org.apache.sqoop.testcategories.IntegrationTest;
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -30,7 +30,7 @@ import org.junit.rules.ExpectedException;
 import java.sql.Connection;
 
 import static org.junit.Assert.assertFalse;
-@Category(UnitTests.class)
+@Category(IntegrationTest.class)
 public class TestDriverManagerJdbcConnectionFactory {
 
   private static final String HSQLDB_DRIVER_CLASS = "org.hsqldb.jdbcDriver";

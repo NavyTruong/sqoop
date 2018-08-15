@@ -18,12 +18,9 @@
 
 package org.apache.sqoop.importjob;
 
-import org.apache.sqoop.testcategories.ThirdPartyTests;
-import org.junit.experimental.categories.Category;
 
 import java.util.List;
 
-@Category(ThirdPartyTests.class)
 public interface ImportJobTestConfiguration {
 
   String[] getTypes();

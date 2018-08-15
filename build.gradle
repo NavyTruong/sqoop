@@ -135,51 +135,66 @@ dependencies {
     testCompile group: 'org.apache.zookeeper', name: 'zookeeper', version: zookeeperVersion, ext: 'jar'
 }
 
-
-task unitTests(type: Test) {
+task sqoopTest (type: Test){
+    description 'Run all Sqoop tests'
+    useJUnit{
+        includeCategories 'org.apache.sqoop.testcategories.SqoopTest'
+    }
+}
+task unitTest (type: Test) {
     description 'Run Unit Tests'
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.UnitTest'
     }
 }
 
-task thirdPartyTest(type: Test) {
+task allIntegrationTest (type: Test){
+    description 'Run Integration Tests'
+    useJUnit {
+        includeCategories 'org.apache.sqoop.testcategories.IntegrationTest'
+        excludeCategories 'org.apache.sqoop.testcategories.UnitTest'
+    }
+}
+
+task thirdPartyTest (type: Test) {
     description 'Run Third-party Tests - you need to specify -Dsqoop.thirdparty.lib.dir where the Third party driver ' +
             'jars reside (relative to the project directory)'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.ThirdPartyTests'
+        includeCategories 'org.apache.sqoop.testcategories.ThirdPartyTest'
     }
     systemProperty "ms.datatype.test.data.file.export" ,"DatatypeTestData-export-lite.txt"
     systemProperty "ms.datatype.test.data.file.import" ,"DatatypeTestData-import-lite.txt"
     systemProperty "ms.datatype.test.data.file.delim" ,","
     systemProperty "ms.datatype.test.hdfsprefix" ,"file:///"
+    forkEvery 0
 }
 
-//task thirdPartyTest(type: Test) {
-//    description 'Run ThirdParty tests - you need to specify -Dsqoop.thirdparty.lib.dir where the Third party driver jars reside (relative to the project directory)'
-//    exclude '**/*ManualTest.*'
-//    exclude '**/Test*.*'
-//    include '**/*Test*.*'
-//    systemProperty "ms.datatype.test.data.file.export" ,"DatatypeTestData-export-lite.txt"
-//    systemProperty "ms.datatype.test.data.file.import" ,"DatatypeTestData-import-lite.txt"
-//    systemProperty "ms.datatype.test.data.file.delim" ,","
-//    systemProperty "ms.datatype.test.hdfsprefix" ,"file:///"
-//}
-
 task manualTest(type: Test) {
-    description 'Run manual tests'
+    description 'Run Manual tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.ManualTests'
+        includeCategories 'org.apache.sqoop.testcategories.ManualTest'
     }
+    forkEvery 0
 }
 
 task integrationPlainTest(type: Test) {
     description 'Run integration tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.IntegrationTests'
-        excludeCategories 'org.apache.sqoop.testcategories.ManualTests'
-        excludeCategories 'org.apache.sqoop.testcategories.ThirdPartyTests'
+        includeCategories 'org.apache.sqoop.testcategories.IntegrationTest'
+        excludeCategories 'org.apache.sqoop.testcategories.ManualTest'
+        excludeCategories 'org.apache.sqoop.testcategories.ThirdPartyTest'
+        excludeCategories 'org.apache.sqoop.testcategories.KerberizedIntegrationTest'
+        excludeCategories 'org.apache.sqoop.testcategories.UnitTest'
     }
+    forkEvery 0
+}
+
+task kerberizedTest (type: Test){
+    description 'Run Kerberized Test'
+    useJUnit {
+        includeCategories 'org.apache.sqoop.testcategories.KerberizedIntegrationTest'
+    }
+    forkEvery 1
 }
 
 def testBuildDir = "$buildDir/test/"
@@ -210,7 +225,7 @@ tasks.withType(Test) {
     minHeapSize = "512m"
     maxHeapSize = "5120m"
     jvmArgs '-Xmx5012m', "-da:org.apache.hadoop.hive.thrift.HadoopThriftAuthBridge"
-    forkEvery 1
+    forkEvery 0
 
     dependsOn buildFolder
 

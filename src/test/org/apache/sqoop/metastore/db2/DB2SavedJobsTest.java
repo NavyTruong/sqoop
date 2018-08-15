@@ -20,6 +20,8 @@ package org.apache.sqoop.metastore.db2;
 
 import org.apache.sqoop.metastore.SavedJobsTestBase;
 import org.apache.sqoop.manager.JdbcDrivers;
+import org.apache.sqoop.testcategories.Db2Test;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test of GenericJobStorage compatibility with DB2
@@ -41,6 +43,7 @@ import org.apache.sqoop.manager.JdbcDrivers;
  *   -Dsqoop.test.db2.connectstring.username and -Dsqoop.test.db2.connectstring.password respectively
  */
 
+@Category(Db2Test.class)
 public class DB2SavedJobsTest extends SavedJobsTestBase {
 
     private static final String HOST_URL = System.getProperty(

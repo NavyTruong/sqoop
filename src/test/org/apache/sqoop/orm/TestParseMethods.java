@@ -39,7 +39,6 @@ import org.apache.sqoop.tool.BaseSqoopTool;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.SqoopOptions.InvalidOptionsException;
-import org.apache.sqoop.config.ConfigurationHelper;
 
 import org.apache.sqoop.tool.ImportTool;
 import org.apache.sqoop.util.ClassLoaderStack;

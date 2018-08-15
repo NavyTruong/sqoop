@@ -29,12 +29,16 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.sqoop.mapreduce.parquet.ParquetImportJobConfigurator;
+import org.apache.sqoop.testcategories.MainFrameTest;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.manager.ImportJobContext;
+import org.junit.experimental.categories.Category;
 
+@Category({UnitTest.class, MainFrameTest.class})
 public class TestMainframeImportJob {
 
   private MainframeImportJob mfImportJob;
