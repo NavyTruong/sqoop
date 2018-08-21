@@ -182,8 +182,7 @@ task integrationPlainTest(type: Test) {
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.IntegrationTest'
         excludeCategories 'org.apache.sqoop.testcategories.ManualTest'
-        excludeCategories 'org.apache.sqoop.testcategories.ThirdPartyTest'
-        excludeCategories 'org.apache.sqoop.testcategories.KerberizedIntegrationTest'
+        excludeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
         excludeCategories 'org.apache.sqoop.testcategories.UnitTest'
     }
     forkEvery 0
@@ -192,9 +191,17 @@ task integrationPlainTest(type: Test) {
 task kerberizedTest (type: Test){
     description 'Run Kerberized Test'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.KerberizedIntegrationTest'
+        includeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
     }
     forkEvery 1
+}
+
+task mySQLTest (type: Test) {
+    description 'Run MySQL third-party tests'
+    useJUnit {
+        includeCategories 'org.apache.sqoop.testcategories.MysqlTest'
+    }
+    forkEvery 0
 }
 
 def testBuildDir = "$buildDir/test/"

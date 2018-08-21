@@ -36,7 +36,6 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 import org.apache.sqoop.manager.NetezzaManager;
 import org.apache.sqoop.testcategories.ManualTest;
-import org.apache.sqoop.testcategories.NetezzaTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -63,7 +62,7 @@ import static org.junit.Assert.fail;
  * this manually with -Dtestcase=NetezzaImportManualTest.
  *
  */
-@Category({ManualTest.class, NetezzaTest.class})
+@Category(ManualTest.class)
 public class NetezzaImportManualTest extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.
