@@ -31,7 +31,6 @@ import org.junit.rules.ExpectedException;
 import java.io.IOException;
 import java.util.List;
 
-
 public class TestHsqldbAvroPadding extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.getLog(

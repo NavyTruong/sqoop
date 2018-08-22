@@ -20,6 +20,8 @@ package org.apache.sqoop.metastore.oracle;
 
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
+import org.apache.sqoop.testcategories.OracleTest;
+import org.junit.experimental.categories.Category;
 
 /**
  * Test that Incremental-Import values are stored correctly in Oracle
@@ -41,6 +43,7 @@ import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
  *   and -Dsqoop.test.oracle.password respectively
  */
 
+@Category(OracleTest.class)
 public class OracleMetaConnectIncrementalImportTest extends MetaConnectIncrementalImportTestBase {
 
     public OracleMetaConnectIncrementalImportTest() {

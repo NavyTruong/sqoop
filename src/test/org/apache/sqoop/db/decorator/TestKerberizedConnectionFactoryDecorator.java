@@ -21,9 +21,11 @@ package org.apache.sqoop.db.decorator;
 import org.apache.hadoop.security.UserGroupInformation;
 import org.apache.sqoop.authentication.KerberosAuthenticator;
 import org.apache.sqoop.db.JdbcConnectionFactory;
+import org.apache.sqoop.testcategories.KerberizedTest;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.rules.ExpectedException;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
@@ -36,7 +38,7 @@ import static org.junit.Assert.assertSame;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
+@Category(KerberizedTest.class)
 public class TestKerberizedConnectionFactoryDecorator {
 
   private KerberizedConnectionFactoryDecorator kerberizedConnectionFactoryDecorator;

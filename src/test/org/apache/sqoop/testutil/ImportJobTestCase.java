@@ -127,7 +127,7 @@ public abstract class ImportJobTestCase extends BaseSqoopTestCase {
 
     Configuration conf = getConf();
     //Need to disable OraOop for existing tests
-    conf.set("oraoop.disabled", "true");
+    //conf.set("oraoop.disabled", "true");
     SqoopOptions opts = getSqoopOptions(conf);
 
     // run the tool through the normal entry-point.
@@ -236,7 +236,7 @@ public abstract class ImportJobTestCase extends BaseSqoopTestCase {
   private int runSqoopTool(SqoopTool tool, String [] argv, SqoopOptions sqoopOptions) {
     Configuration conf = getConf();
     //Need to disable OraOop for existing tests
-    conf.set("oraoop.disabled", "true");
+    //conf.set("oraoop.disabled", "true");
     Sqoop sqoop = new Sqoop(tool, conf, sqoopOptions);
 
     return Sqoop.runSqoop(sqoop, argv);

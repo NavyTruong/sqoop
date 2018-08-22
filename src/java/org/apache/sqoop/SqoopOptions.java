@@ -1078,8 +1078,8 @@ public class SqoopOptions implements Cloneable {
     this.codeOutputDir = System.getProperty("sqoop.src.dir", ".");
 
     String myTmpDir = System.getProperty("test.build.data", "/tmp/");
-    if (!myTmpDir.endsWith(File.separator)) {
-      myTmpDir = myTmpDir + File.separator;
+    if (!myTmpDir.endsWith("/")) {
+      myTmpDir = myTmpDir + "/";
     }
 
     this.tmpDir = myTmpDir;

@@ -29,6 +29,7 @@ import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapred.FileOutputFormat;
 import org.apache.hadoop.mapred.JobClient;
 import org.apache.hadoop.mapred.JobConf;
+import org.apache.sqoop.testcategories.UnitTest;
 import org.apache.sqoop.testutil.BaseSqoopTestCase;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.sqoop.testutil.ExplicitSetMapper;
@@ -39,11 +40,11 @@ import org.apache.sqoop.tool.BaseSqoopTool;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.SqoopOptions.InvalidOptionsException;
-import org.apache.sqoop.config.ConfigurationHelper;
 
 import org.apache.sqoop.tool.ImportTool;
 import org.apache.sqoop.util.ClassLoaderStack;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -52,6 +53,7 @@ import static org.junit.Assert.fail;
  * Test that the parse() methods generated in user SqoopRecord implementations
  * work.
  */
+@Category(UnitTest.class)
 public class TestParseMethods extends ImportJobTestCase {
 
   /**

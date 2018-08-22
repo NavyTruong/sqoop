@@ -35,6 +35,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 import org.apache.sqoop.manager.NetezzaManager;
+import org.apache.sqoop.testcategories.ManualTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -44,6 +45,7 @@ import org.apache.sqoop.manager.ConnManager;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.sqoop.testutil.ImportJobTestCase;
 import org.apache.sqoop.util.FileListing;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -60,6 +62,7 @@ import static org.junit.Assert.fail;
  * this manually with -Dtestcase=NetezzaImportManualTest.
  *
  */
+@Category(ManualTest.class)
 public class NetezzaImportManualTest extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.

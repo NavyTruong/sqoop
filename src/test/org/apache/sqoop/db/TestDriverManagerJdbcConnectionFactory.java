@@ -18,17 +18,19 @@
 
 package org.apache.sqoop.db;
 
+import org.apache.sqoop.testcategories.IntegrationTest;
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.rules.ExpectedException;
 
 import java.sql.Connection;
 
 import static org.junit.Assert.assertFalse;
-
+@Category(IntegrationTest.class)
 public class TestDriverManagerJdbcConnectionFactory {
 
   private static final String HSQLDB_DRIVER_CLASS = "org.hsqldb.jdbcDriver";
@@ -50,7 +52,6 @@ public class TestDriverManagerJdbcConnectionFactory {
   public static void beforeClass() throws Exception {
     hsqldbTestServer = new HsqldbTestServer();
     hsqldbTestServer.start();
-
     hsqldbTestServer.createNewUser(DB_USERNAME, DB_PASSWORD);
   }
 
