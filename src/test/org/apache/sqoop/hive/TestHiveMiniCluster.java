@@ -39,7 +39,7 @@ import java.sql.SQLException;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
-@Ignore
+
 @RunWith(Parameterized.class)
 public class TestHiveMiniCluster {
 

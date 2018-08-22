@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-@Ignore
+
 public class TestHiveServer2TextImport extends ImportJobTestCase {
 
   @ClassRule
