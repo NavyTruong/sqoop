@@ -352,7 +352,6 @@ public class OraOopDataDrivenDBInputFormat<T extends SqoopRecord> extends
 
     }
 
-    // Log information of the data chunks
     if (LOG.isDebugEnabled()) {
       for (int idx = 0; idx < splits.size(); idx++) {
         LOG.debug("\n\t"

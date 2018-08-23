@@ -18,7 +18,6 @@
 
 package org.apache.sqoop.manager.postgresql;
 
-
 public class PostgresqlTestUtil {
 
   public static final String HOST_URL = System.getProperty(

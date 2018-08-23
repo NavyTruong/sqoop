@@ -32,14 +32,12 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestData.KEY_STRINGS;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestDataFileParser.DATATYPES;
-import org.apache.sqoop.testcategories.ThirdPartyTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.apache.sqoop.Sqoop;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.testutil.ExportJobTestCase;
 import org.apache.sqoop.tool.ExportTool;
-import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -48,7 +46,6 @@ import static org.junit.Assert.fail;
 /**
  * Test utilities for export to SQL Server.
 */
-@Category(ThirdPartyTest.class)
 public abstract class ManagerCompatExport extends ExportJobTestCase {
 
   private MSSQLTestDataFileParser tdfs;

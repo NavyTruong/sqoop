@@ -31,7 +31,6 @@ import org.apache.sqoop.mapreduce.SQLServerResilientUpdateOutputFormat;
 import org.apache.sqoop.mapreduce.db.DataDrivenDBInputFormat;
 import org.apache.sqoop.mapreduce.db.SQLServerDBInputFormat;
 import org.apache.sqoop.mapreduce.sqlserver.SqlServerExportBatchOutputFormat;
-import org.apache.sqoop.testcategories.SqlServerTest;
 import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,7 +41,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Test methods in the configuration utilities.
  */
-@Category({UnitTest.class, SqlServerTest.class})
+@Category(UnitTest.class)
 public class TestSqlServerManagerContextConfigurator {
 
   public static final Log LOG = LogFactory.getLog(TestSqlServerManagerContextConfigurator.class.getName());

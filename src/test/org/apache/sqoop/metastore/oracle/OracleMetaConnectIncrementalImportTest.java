@@ -42,7 +42,6 @@ import org.junit.experimental.categories.Category;
  *   -Dsqoop.test.oracle.connectstring, -Dsqoop.test.oracle.username
  *   and -Dsqoop.test.oracle.password respectively
  */
-
 @Category(OracleTest.class)
 public class OracleMetaConnectIncrementalImportTest extends MetaConnectIncrementalImportTestBase {
 

@@ -37,7 +37,6 @@ import org.junit.experimental.categories.Category;
 /**
  * Test the basic mysql connection manager with the various column types.
  */
-
 @Category(MysqlTest.class)
 public class MySQLCompatTest extends ManagerCompatTestCase {
 

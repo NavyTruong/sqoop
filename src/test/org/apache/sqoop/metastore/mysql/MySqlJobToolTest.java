@@ -42,7 +42,6 @@ import org.junit.experimental.categories.Category;
  *   -Dsqoop.test.mysql.connectstring.host_url, -Dsqoop.test.mysql.databasename,
  *   -Dsqoop.test.mysql.username and -Dsqoop.test.mysql.password respectively
  */
-
 @Category(MysqlTest.class)
 public class MySqlJobToolTest extends JobToolTestBase {
 

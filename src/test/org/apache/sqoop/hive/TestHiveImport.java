@@ -55,6 +55,7 @@ import static org.junit.Assert.fail;
 /**
  * Test HiveImport capability after an import to HDFS.
  */
+
 public class TestHiveImport extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.getLog(

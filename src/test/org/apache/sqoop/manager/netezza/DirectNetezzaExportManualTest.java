@@ -26,6 +26,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.sqoop.manager.DirectNetezzaManager;
 import org.apache.sqoop.testcategories.ManualTest;
+import org.apache.sqoop.testcategories.NetezzaTest;
 import org.junit.Test;
 
 import org.apache.sqoop.SqoopOptions;
@@ -36,7 +37,7 @@ import static org.junit.Assert.fail;
 /**
  * Test the DirectNetezzaManager implementation's exportJob() functionality.
  */
-@Category(ManualTest.class)
+@Category({ManualTest.class, NetezzaTest.class})
 public class DirectNetezzaExportManualTest extends NetezzaExportManualTest {
 
   public static final Log LOG = LogFactory

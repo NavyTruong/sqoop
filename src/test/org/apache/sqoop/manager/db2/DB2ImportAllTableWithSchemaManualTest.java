@@ -75,7 +75,7 @@ import static org.junit.Assert.fail;
  *   Create a login SQOOP with password PASSWORD and grant all
  *   access for database SQOOP to user SQOOP.
  */
-@Category(ManualTest.class)
+@Category({ManualTest.class, Db2Test.class})
 public class DB2ImportAllTableWithSchemaManualTest extends ImportJobTestCase {
 
   public static final Log LOG = LogFactory.getLog(

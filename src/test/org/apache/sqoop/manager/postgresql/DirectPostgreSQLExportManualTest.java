@@ -56,7 +56,7 @@ import org.junit.experimental.categories.Category;
  * $ psql -U sqooptest sqooptest
  *
  */
-@Category(ManualTest.class)
+@Category({ManualTest.class, PostgresqlTest.class})
 public class DirectPostgreSQLExportManualTest extends TestExport {
 
   public static final Log LOG =

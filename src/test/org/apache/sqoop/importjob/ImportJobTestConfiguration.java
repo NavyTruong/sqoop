@@ -18,7 +18,6 @@
 
 package org.apache.sqoop.importjob;
 
-
 import java.util.List;
 
 public interface ImportJobTestConfiguration {

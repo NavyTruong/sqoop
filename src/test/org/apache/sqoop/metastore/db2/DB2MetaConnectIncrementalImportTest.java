@@ -41,7 +41,6 @@ import org.junit.experimental.categories.Category;
  *   -Dsqoop.test.db2.connectstring.host_url, -Dsqoop.test.db2.connectstring.database,
  *   -Dsqoop.test.db2.connectstring.username and -Dsqoop.test.db2.connectstring.password respectively
  */
-
 @Category(Db2Test.class)
 public class DB2MetaConnectIncrementalImportTest extends MetaConnectIncrementalImportTestBase {
 

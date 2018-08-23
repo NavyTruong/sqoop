@@ -30,6 +30,7 @@ import org.junit.rules.ExpectedException;
 import java.sql.Connection;
 
 import static org.junit.Assert.assertFalse;
+
 @Category(IntegrationTest.class)
 public class TestDriverManagerJdbcConnectionFactory {
 

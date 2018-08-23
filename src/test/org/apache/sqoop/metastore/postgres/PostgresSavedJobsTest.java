@@ -38,7 +38,6 @@ import org.junit.experimental.categories.Category;
  *   -Dsqoop.test.postgresql.connectstring.host_url, -Dsqoop.test.postgresql.database,
  *   -Dsqoop.test.postgresql.username and -Dsqoop.test.postgresql.password respectively
  */
-
 @Category(PostgresqlTest.class)
 public class PostgresSavedJobsTest extends SavedJobsTestBase {
 

@@ -29,7 +29,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Test aspects of DBConfiguration.
  */
-@Category({UnitTest.class})
+@Category(UnitTest.class)
 public class TestDBConfiguration {
 
   @Test

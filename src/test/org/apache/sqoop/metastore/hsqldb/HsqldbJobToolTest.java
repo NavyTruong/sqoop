@@ -29,6 +29,7 @@ import org.apache.sqoop.metastore.JobToolTestBase;
  *
  * This uses JDBC to store and retrieve metastore data from a local Hsqldb server
  */
+
 public class HsqldbJobToolTest extends JobToolTestBase {
 
     public HsqldbJobToolTest() {

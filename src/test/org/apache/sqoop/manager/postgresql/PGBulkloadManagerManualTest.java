@@ -65,7 +65,7 @@ import org.junit.experimental.categories.Category;
  * sqooptest=# \q
  *
  */
-@Category(ManualTest.class)
+@Category({ManualTest.class, PostgresqlTest.class})
 public class PGBulkloadManagerManualTest extends TestExport {
 
   public static final Log LOG =
