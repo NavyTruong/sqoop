@@ -214,12 +214,12 @@ public abstract class BaseSqoopTestCase {
   public void setUp() {
     // The assumption is that correct HADOOP configuration will have it set to
     // hdfs://namenode
-    SqoopOptions.clearNonceDir();
-
     setOnPhysicalCluster(
         !CommonArgs.LOCAL_FS.equals(System.getProperty(
             CommonArgs.FS_DEFAULT_NAME)));
     incrementTableNum();
+
+    SqoopOptions.clearNonceDir();
 
     if (!isLog4jConfigured) {
       BasicConfigurator.configure();
