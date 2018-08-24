@@ -25,7 +25,7 @@ import org.apache.hadoop.conf.Configuration;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.TestMultiCols;
-import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

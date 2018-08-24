@@ -38,7 +38,7 @@ import org.apache.sqoop.cli.ToolOptions;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 

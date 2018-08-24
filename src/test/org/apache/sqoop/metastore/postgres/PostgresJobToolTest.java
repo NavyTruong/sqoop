@@ -19,7 +19,7 @@
 package org.apache.sqoop.metastore.postgres;
 
 import org.apache.sqoop.metastore.JobToolTestBase;
-import org.apache.sqoop.testcategories.PostgresqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.PostgresqlTest;
 import org.junit.experimental.categories.Category;
 
 /**

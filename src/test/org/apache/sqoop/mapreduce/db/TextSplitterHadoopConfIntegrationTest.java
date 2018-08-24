@@ -23,7 +23,7 @@ import java.util.List;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.apache.sqoop.validation.ValidationException;
 
 import org.apache.sqoop.testutil.MockResultSet;

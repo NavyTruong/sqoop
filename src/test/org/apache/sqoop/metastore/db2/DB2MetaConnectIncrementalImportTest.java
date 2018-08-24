@@ -19,7 +19,7 @@
 package org.apache.sqoop.metastore.db2;
 
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
-import org.apache.sqoop.testcategories.Db2Test;
+import org.apache.sqoop.testcategories.thirdpartytest.Db2Test;
 import org.junit.experimental.categories.Category;
 
 /**

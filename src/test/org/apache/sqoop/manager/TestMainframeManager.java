@@ -31,7 +31,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.accumulo.AccumuloUtil;
 import org.apache.sqoop.hbase.HBaseUtil;
-import org.apache.sqoop.testcategories.MainFrameTest;
+import org.apache.sqoop.testcategories.thirdpartytest.MainFrameTest;
 import org.apache.sqoop.tool.MainframeImportTool;
 import org.junit.After;
 import org.junit.Before;

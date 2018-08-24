@@ -27,7 +27,7 @@ import org.apache.hadoop.conf.Configuration;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.TestAllTables;
-import org.apache.sqoop.testcategories.MysqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.MysqlTest;
 import org.junit.experimental.categories.Category;
 
 /**

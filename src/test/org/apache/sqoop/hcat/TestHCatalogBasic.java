@@ -18,7 +18,7 @@
 
 package org.apache.sqoop.hcat;
 
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 
 import org.apache.sqoop.SqoopOptions;

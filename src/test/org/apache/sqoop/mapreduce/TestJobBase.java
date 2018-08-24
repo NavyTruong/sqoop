@@ -28,7 +28,7 @@ import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.sqoop.config.ConfigurationConstants;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 

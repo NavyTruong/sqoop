@@ -1,4 +1,4 @@
-package org.apache.sqoop.testcategories;
+package org.apache.sqoop.testcategories.sqooptest;
 
 public interface IntegrationTest extends SqoopTest {
 }

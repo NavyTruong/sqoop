@@ -20,7 +20,7 @@ package org.apache.sqoop.metastore.postgres;
 
 import org.apache.sqoop.metastore.SavedJobsTestBase;
 import org.apache.sqoop.manager.JdbcDrivers;
-import org.apache.sqoop.testcategories.PostgresqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.PostgresqlTest;
 import org.junit.experimental.categories.Category;
 
 /**

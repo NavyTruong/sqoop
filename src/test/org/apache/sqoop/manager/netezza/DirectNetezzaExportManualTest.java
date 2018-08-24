@@ -25,8 +25,8 @@ import java.util.Arrays;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.sqoop.manager.DirectNetezzaManager;
-import org.apache.sqoop.testcategories.ManualTest;
-import org.apache.sqoop.testcategories.NetezzaTest;
+import org.apache.sqoop.testcategories.sqooptest.ManualTest;
+import org.apache.sqoop.testcategories.thirdpartytest.NetezzaTest;
 import org.junit.Test;
 
 import org.apache.sqoop.SqoopOptions;

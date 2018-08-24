@@ -27,7 +27,7 @@ import org.apache.hadoop.conf.Configuration;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.TestFreeFormQueryImport;
-import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.thirdpartytest.OracleTest;
 import org.junit.experimental.categories.Category;
 
 /**

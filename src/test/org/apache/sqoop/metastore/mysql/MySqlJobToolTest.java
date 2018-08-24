@@ -20,7 +20,7 @@ package org.apache.sqoop.metastore.mysql;
 
 import org.apache.sqoop.manager.mysql.MySQLTestUtils;
 import org.apache.sqoop.metastore.JobToolTestBase;
-import org.apache.sqoop.testcategories.MysqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.MysqlTest;
 import org.junit.experimental.categories.Category;
 
 /**

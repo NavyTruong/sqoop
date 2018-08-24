@@ -29,7 +29,7 @@ import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.sqoop.testcategories.MysqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.MysqlTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

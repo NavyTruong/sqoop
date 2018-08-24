@@ -28,7 +28,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 
 import org.apache.sqoop.SqoopOptions;
-import org.apache.sqoop.testcategories.CubridTest;
+import org.apache.sqoop.testcategories.thirdpartytest.CubridTest;
 import org.apache.sqoop.testutil.ManagerCompatTestCase;
 import org.junit.experimental.categories.Category;
 

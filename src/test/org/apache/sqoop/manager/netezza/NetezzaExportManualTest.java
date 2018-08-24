@@ -31,8 +31,8 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.sqoop.manager.DirectNetezzaManager;
 import org.apache.sqoop.manager.NetezzaManager;
-import org.apache.sqoop.testcategories.ManualTest;
-import org.apache.sqoop.testcategories.NetezzaTest;
+import org.apache.sqoop.testcategories.sqooptest.ManualTest;
+import org.apache.sqoop.testcategories.thirdpartytest.NetezzaTest;
 import org.junit.Before;
 
 import org.apache.sqoop.SqoopOptions;

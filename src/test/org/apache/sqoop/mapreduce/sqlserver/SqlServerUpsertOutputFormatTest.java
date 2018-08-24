@@ -31,7 +31,7 @@ import org.apache.hadoop.mapreduce.TaskAttemptID;
 import org.apache.sqoop.manager.SQLServerManager;
 import org.apache.sqoop.mapreduce.ExportJobBase;
 import org.apache.sqoop.mapreduce.sqlserver.SqlServerUpsertOutputFormat.SqlServerUpsertRecordWriter;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 

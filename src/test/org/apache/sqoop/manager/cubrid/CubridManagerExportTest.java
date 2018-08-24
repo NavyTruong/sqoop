@@ -32,7 +32,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.manager.CubridManager;
-import org.apache.sqoop.testcategories.CubridTest;
+import org.apache.sqoop.testcategories.thirdpartytest.CubridTest;
 import org.junit.After;
 import org.junit.Before;
 

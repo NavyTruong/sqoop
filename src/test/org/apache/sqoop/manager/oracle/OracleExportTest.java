@@ -27,7 +27,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.manager.OracleManager;
-import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.thirdpartytest.OracleTest;
 import org.junit.After;
 import org.junit.Before;
 

@@ -20,7 +20,7 @@ package org.apache.sqoop.metastore.oracle;
 
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
-import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.thirdpartytest.OracleTest;
 import org.junit.experimental.categories.Category;
 
 /**

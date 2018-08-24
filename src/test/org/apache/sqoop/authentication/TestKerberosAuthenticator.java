@@ -22,7 +22,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeys;
 import org.apache.hadoop.security.UserGroupInformation;
 import org.apache.sqoop.infrastructure.kerberos.MiniKdcInfrastructureRule;
-import org.apache.sqoop.testcategories.IntegrationTest;
+import org.apache.sqoop.testcategories.sqooptest.IntegrationTest;
 import org.apache.sqoop.testcategories.KerberizedTest;
 import org.junit.ClassRule;
 import org.junit.Rule;

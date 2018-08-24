@@ -36,7 +36,7 @@ import org.apache.hadoop.crypto.JceAesCtrCryptoCodec;
 import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 
 import org.junit.Test;

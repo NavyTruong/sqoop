@@ -34,7 +34,7 @@ import java.util.jar.JarInputStream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.util.Shell;
-import org.apache.sqoop.testcategories.IntegrationTest;
+import org.apache.sqoop.testcategories.sqooptest.IntegrationTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

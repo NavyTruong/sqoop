@@ -34,7 +34,7 @@ import org.apache.sqoop.manager.sqlserver.MSSQLTestDataFileParser.DATATYPES;
 import org.apache.sqoop.Sqoop;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.orm.CompilationManager;
-import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.sqoop.tool.ImportTool;
 import org.apache.sqoop.util.ClassLoaderStack;

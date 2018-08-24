@@ -21,7 +21,7 @@ package org.apache.sqoop.tool;
 import org.apache.commons.cli.CommandLine;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.mapreduce.parquet.ParquetJobConfiguratorImplementation;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

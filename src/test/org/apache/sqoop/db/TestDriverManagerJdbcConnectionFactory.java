@@ -18,7 +18,7 @@
 
 package org.apache.sqoop.db;
 
-import org.apache.sqoop.testcategories.IntegrationTest;
+import org.apache.sqoop.testcategories.sqooptest.IntegrationTest;
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

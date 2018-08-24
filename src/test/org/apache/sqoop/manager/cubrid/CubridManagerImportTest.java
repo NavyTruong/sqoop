@@ -36,7 +36,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 import org.apache.sqoop.manager.ConnManager;
 import org.apache.sqoop.manager.CubridManager;
-import org.apache.sqoop.testcategories.CubridTest;
+import org.apache.sqoop.testcategories.thirdpartytest.CubridTest;
 import org.apache.sqoop.util.FileListing;
 
 import org.junit.After;

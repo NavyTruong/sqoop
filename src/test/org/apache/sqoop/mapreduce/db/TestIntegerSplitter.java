@@ -20,7 +20,7 @@ package org.apache.sqoop.mapreduce.db;
 import java.sql.SQLException;
 import java.util.List;
 
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 

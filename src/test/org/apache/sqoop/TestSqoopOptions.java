@@ -33,7 +33,7 @@ import java.util.UUID;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.sqoop.manager.oracle.OracleUtils;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.After;
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.apache.sqoop.tool.ImportAllTablesTool;
@@ -46,7 +46,6 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.rules.ExpectedException;
 
-import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.lib.DelimiterSet;
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.apache.sqoop.tool.BaseSqoopTool;

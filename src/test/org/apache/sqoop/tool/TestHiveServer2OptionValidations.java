@@ -19,7 +19,7 @@
 package org.apache.sqoop.tool;
 
 import org.apache.sqoop.SqoopOptions;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -32,7 +32,6 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Properties;
 
-import static org.apache.sqoop.SqoopOptions.FileLayout.ParquetFile;
 import static org.apache.sqoop.SqoopOptions.IncrementalMode.None;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.doReturn;

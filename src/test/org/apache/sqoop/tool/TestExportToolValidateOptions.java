@@ -21,7 +21,7 @@ package org.apache.sqoop.tool;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.sqoop.manager.SupportedManagers;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 

@@ -39,7 +39,7 @@ import java.text.SimpleDateFormat;
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.thirdpartytest.OracleTest;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

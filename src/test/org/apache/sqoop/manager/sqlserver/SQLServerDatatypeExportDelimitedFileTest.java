@@ -23,7 +23,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestDataFileParser.DATATYPES;
-import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.junit.experimental.categories.Category;
 
 import java.io.OutputStream;

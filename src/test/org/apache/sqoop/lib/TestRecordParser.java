@@ -21,7 +21,7 @@ package org.apache.sqoop.lib;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

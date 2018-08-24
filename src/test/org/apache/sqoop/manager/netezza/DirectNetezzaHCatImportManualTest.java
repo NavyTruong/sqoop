@@ -31,8 +31,8 @@ import org.apache.sqoop.hcat.HCatalogTestUtils;
 import org.apache.sqoop.hcat.HCatalogTestUtils.ColumnGenerator;
 import org.apache.sqoop.hcat.HCatalogTestUtils.KeyType;
 import org.apache.sqoop.manager.NetezzaManager;
-import org.apache.sqoop.testcategories.ManualTest;
-import org.apache.sqoop.testcategories.NetezzaTest;
+import org.apache.sqoop.testcategories.sqooptest.ManualTest;
+import org.apache.sqoop.testcategories.thirdpartytest.NetezzaTest;
 import org.junit.Before;
 
 import org.apache.sqoop.SqoopOptions;

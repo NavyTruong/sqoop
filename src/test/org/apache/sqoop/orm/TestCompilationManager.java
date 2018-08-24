@@ -18,7 +18,7 @@
 package org.apache.sqoop.orm;
 
 import org.apache.sqoop.SqoopOptions;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

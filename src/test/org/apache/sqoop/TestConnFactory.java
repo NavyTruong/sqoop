@@ -26,13 +26,11 @@ import java.util.Map;
 
 import org.apache.hadoop.conf.Configuration;
 
-import org.apache.sqoop.ConnFactory;
-import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.manager.ConnManager;
 import org.apache.sqoop.manager.ImportJobContext;
 import org.apache.sqoop.manager.ManagerFactory;
 import org.apache.sqoop.metastore.JobData;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.apache.sqoop.tool.ImportTool;
 import org.junit.Test;
 

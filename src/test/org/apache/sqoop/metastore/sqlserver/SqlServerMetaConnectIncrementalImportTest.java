@@ -20,7 +20,7 @@ package org.apache.sqoop.metastore.sqlserver;
 
 import org.apache.sqoop.metastore.MetaConnectIncrementalImportTestBase;
 import org.apache.sqoop.manager.sqlserver.MSSQLTestUtils;
-import org.apache.sqoop.testcategories.SqlServerTest;
+import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.junit.experimental.categories.Category;
 
 /**

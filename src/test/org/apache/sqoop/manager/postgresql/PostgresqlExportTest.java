@@ -18,7 +18,7 @@
 package org.apache.sqoop.manager.postgresql;
 
 import org.apache.sqoop.SqoopOptions;
-import org.apache.sqoop.testcategories.PostgresqlTest;
+import org.apache.sqoop.testcategories.thirdpartytest.PostgresqlTest;
 import org.apache.sqoop.testutil.CommonArgs;
 import org.apache.sqoop.testutil.ExportJobTestCase;
 import org.apache.commons.logging.Log;

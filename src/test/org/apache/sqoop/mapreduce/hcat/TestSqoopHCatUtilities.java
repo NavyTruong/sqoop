@@ -23,7 +23,7 @@ import static org.junit.Assert.assertSame;
 
 import java.io.IOException;
 
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

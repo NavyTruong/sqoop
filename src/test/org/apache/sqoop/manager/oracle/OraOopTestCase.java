@@ -44,7 +44,7 @@ import org.apache.sqoop.manager.oracle.util.OracleData;
 
 import org.apache.sqoop.Sqoop;
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
-import org.apache.sqoop.testcategories.OracleTest;
+import org.apache.sqoop.testcategories.thirdpartytest.OracleTest;
 import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;

@@ -38,7 +38,7 @@ import org.apache.avro.Schema;
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.avro.AvroSchemaMismatchException;
 import org.apache.sqoop.hive.HiveClientFactory;
-import org.apache.sqoop.testcategories.UnitTest;
+import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.apache.sqoop.util.ExpectedLogMessage;
 import org.junit.Assert;
 import org.junit.Before;
