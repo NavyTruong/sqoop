@@ -138,21 +138,21 @@ dependencies {
 task sqoopTest (type: Test){
     description 'Run all Sqoop tests'
     useJUnit{
-        includeCategories 'org.apache.sqoop.testcategories.SqoopTest'
+        includeCategories 'org.apache.sqoop.testcategories.sqooptest.SqoopTest'
     }
 }
 task unitTest (type: Test) {
     description 'Run Unit Tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.UnitTest'
+        includeCategories 'org.apache.sqoop.testcategories.sqooptest.UnitTest'
+        excludeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
     }
 }
 
 task allIntegrationTest (type: Test){
     description 'Run Integration Tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.IntegrationTest'
-        excludeCategories 'org.apache.sqoop.testcategories.UnitTest'
+        includeCategories 'org.apache.sqoop.testcategories.sqooptest.IntegrationTest'
     }
 }
 
@@ -160,32 +160,29 @@ task thirdPartyTest (type: Test) {
     description 'Run Third-party Tests - you need to specify -Dsqoop.thirdparty.lib.dir where the Third party driver ' +
             'jars reside (relative to the project directory)'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.ThirdPartyTest'
+        includeCategories 'org.apache.sqoop.testcategories.thirdpartytest.ThirdPartyTest'
     }
     systemProperty "ms.datatype.test.data.file.export" ,"DatatypeTestData-export-lite.txt"
     systemProperty "ms.datatype.test.data.file.import" ,"DatatypeTestData-import-lite.txt"
     systemProperty "ms.datatype.test.data.file.delim" ,","
     systemProperty "ms.datatype.test.hdfsprefix" ,"file:///"
-    forkEvery 0
 }
 
 task manualTest(type: Test) {
     description 'Run Manual tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.ManualTest'
+        includeCategories 'org.apache.sqoop.testcategories.sqooptest.ManualTest'
     }
-    forkEvery 0
 }
 
 task integrationPlainTest(type: Test) {
     description 'Run integration tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.IntegrationTest'
-        excludeCategories 'org.apache.sqoop.testcategories.ManualTest'
+        includeCategories 'org.apache.sqoop.testcategories.sqooptest.IntegrationTest'
+        excludeCategories 'org.apache.sqoop.testcategories.sqooptest.ManualTest'
         excludeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
-        excludeCategories 'org.apache.sqoop.testcategories.UnitTest'
+        excludeCategories 'org.apache.sqoop.testcategories.thirdpartytest.ThirdPartyTest'
     }
-    forkEvery 0
 }
 
 task kerberizedTest (type: Test){
@@ -199,9 +196,8 @@ task kerberizedTest (type: Test){
 task mySQLTest (type: Test) {
     description 'Run MySQL third-party tests'
     useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.MysqlTest'
+        includeCategories 'org.apache.sqoop.testcategories.thirdpartytest.MysqlTest'
     }
-    forkEvery 0
 }
 
 def testBuildDir = "$buildDir/test/"
