@@ -32,6 +32,7 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Properties;
 
+import static org.apache.sqoop.SqoopOptions.FileLayout.ParquetFile;
 import static org.apache.sqoop.SqoopOptions.IncrementalMode.None;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.doReturn;
