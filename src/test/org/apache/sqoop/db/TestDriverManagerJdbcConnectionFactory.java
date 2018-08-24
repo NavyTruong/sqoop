@@ -53,6 +53,7 @@ public class TestDriverManagerJdbcConnectionFactory {
   public static void beforeClass() throws Exception {
     hsqldbTestServer = new HsqldbTestServer();
     hsqldbTestServer.start();
+
     hsqldbTestServer.createNewUser(DB_USERNAME, DB_PASSWORD);
   }
 

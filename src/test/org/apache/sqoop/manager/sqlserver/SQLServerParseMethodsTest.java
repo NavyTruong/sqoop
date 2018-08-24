@@ -38,6 +38,7 @@ import org.apache.hadoop.util.StringUtils;
 
 import org.apache.sqoop.SqoopOptions;
 import org.apache.sqoop.SqoopOptions.InvalidOptionsException;
+import org.apache.sqoop.config.ConfigurationHelper;
 import org.apache.sqoop.orm.CompilationManager;
 import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.apache.sqoop.testutil.CommonArgs;
