@@ -21,7 +21,6 @@ package org.apache.sqoop.manager.oracle;
 import org.apache.sqoop.mapreduce.db.DBConfiguration;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.JobContext;
-import org.apache.sqoop.testcategories.OraOppTest;
 import org.apache.sqoop.testcategories.UnitTest;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,7 +39,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@Category(OraOppTest.class)
+@Category(UnitTest.class)
 public class OraOopDataDrivenDBInputFormatConnectionCloseTest {
 
   private static final OraOopLog LOG = OraOopLogFactory.getLog(

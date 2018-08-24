@@ -27,6 +27,7 @@ import org.apache.sqoop.hive.minicluster.KerberosAuthenticationConfiguration;
 import org.apache.sqoop.hive.minicluster.NoAuthenticationConfiguration;
 import org.apache.sqoop.hive.minicluster.PasswordAuthenticationConfiguration;
 import org.apache.sqoop.infrastructure.kerberos.MiniKdcInfrastructureRule;
+import org.apache.sqoop.testcategories.IntegrationTest;
 import org.apache.sqoop.testcategories.KerberizedTest;
 import org.junit.After;
 import org.junit.Before;
@@ -45,7 +46,7 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-@Category(KerberizedTest.class)
+@Category({KerberizedTest.class, IntegrationTest.class})
 @RunWith(Parameterized.class)
 public class TestHiveMiniCluster {
 

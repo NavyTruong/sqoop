@@ -35,6 +35,8 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.StringUtils;
 import org.apache.sqoop.mapreduce.DBWritable;
+import org.apache.sqoop.mapreduce.db.DataDrivenDBInputFormat;
+import org.apache.sqoop.mapreduce.db.DBConfiguration;
 import org.apache.sqoop.testcategories.IntegrationTest;
 import org.junit.After;
 import org.junit.Before;

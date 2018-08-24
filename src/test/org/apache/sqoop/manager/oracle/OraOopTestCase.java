@@ -44,7 +44,7 @@ import org.apache.sqoop.manager.oracle.util.OracleData;
 
 import org.apache.sqoop.Sqoop;
 import org.apache.sqoop.manager.oracle.util.OracleUtils;
-import org.apache.sqoop.testcategories.OraOppTest;
+import org.apache.sqoop.testcategories.OracleTest;
 import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.assertEquals;
@@ -52,7 +52,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Base test case for OraOop to handle common functions.
  */
-@Category(OraOppTest.class)
+@Category(OracleTest.class)
 public abstract class OraOopTestCase {
 
   private static final OraOopLog LOG = OraOopLogFactory.getLog(
