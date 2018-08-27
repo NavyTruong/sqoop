@@ -146,6 +146,7 @@ task unitTest (type: Test) {
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.sqooptest.UnitTest'
         excludeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
+        excludeCategories 'org.apache.sqoop.testcategories.thirdpartytest.ThirdPartyTest'
     }
 }
 
