@@ -25,16 +25,14 @@ import org.apache.sqoop.infrastructure.kerberos.MiniKdcInfrastructureRule;
 import org.apache.sqoop.testutil.ArgumentArrayBuilder;
 import org.apache.sqoop.testutil.HiveServer2TestUtil;
 import org.apache.sqoop.testutil.ImportJobTestCase;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.ClassRule;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 public class TestHiveServer2TextImport extends ImportJobTestCase {
 
   @ClassRule
