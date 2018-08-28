@@ -188,6 +188,10 @@ task integrationPlainTest(type: Test) {
 
 task kerberizedTest (type: Test){
     description 'Run Kerberized Test'
+    include '**/TestKerberosAuthenticator*'
+    include '**/HBaseKerberizedConnectivityTest*'
+    include '**/TestHiveMiniCluster*'
+    include '**/TestHiveServer2TextImport*'
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
     }
