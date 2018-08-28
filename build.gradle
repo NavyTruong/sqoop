@@ -208,7 +208,7 @@ task mySQLTest (type: Test) {
     }
 }
 
-task independentTest(type: Test) {
+task test(type: Test) {
     description 'Run tests that do not need exteral JDBC driver and/or a docker. ' +
             'This includes integration plain tests and unit tests'
     include ''
