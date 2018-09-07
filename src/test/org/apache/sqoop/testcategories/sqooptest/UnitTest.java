@@ -17,5 +17,9 @@
  */
 package org.apache.sqoop.testcategories.sqooptest;
 
+/**
+ * A unit test shall test one class at a time having it's dependencies mocked.
+ * A unit test shall not start a mini cluster nor an embedded database and it shall not use a JDBC driver.
+ */
 public interface UnitTest extends SqoopTest {
 }
