@@ -153,15 +153,8 @@ dependencies {
     testCompile group: 'org.apache.zookeeper', name: 'zookeeper', version: zookeeperVersion, ext: 'jar'
 }
 
-task sqoopTest (type: Test){
-    description 'Run all Sqoop tests'
-    useJUnit{
-        includeCategories 'org.apache.sqoop.testcategories.sqooptest.SqoopTest'
-    }
-}
-
 task unitTest (type: Test) {
-    description 'Run Unit Tests'
+    description 'Run unit tests'
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.sqooptest.UnitTest'
         excludeCategories 'org.apache.sqoop.testcategories.KerberizedTest'
@@ -170,7 +163,7 @@ task unitTest (type: Test) {
 }
 
 task allIntegrationTest (type: Test){
-    description 'Run Integration Tests'
+    description 'Run all  integration tests'
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.sqooptest.IntegrationTest'
     }
@@ -191,7 +184,7 @@ task thirdPartyTest (type: Test) {
 }
 
 task manualTest(type: Test) {
-    description 'Run Manual tests'
+    description 'Run manual tests'
     useJUnit {
         includeCategories 'org.apache.sqoop.testcategories.sqooptest.ManualTest'
     }
@@ -219,19 +212,18 @@ task kerberizedTest (type: Test){
     forkEvery 1
 }
 
-task mySQLTest (type: Test) {
-    description 'Run MySQL third-party tests'
-    useJUnit {
-        includeCategories 'org.apache.sqoop.testcategories.thirdpartytest.MysqlTest'
-    }
-}
-
 test {
     description 'Run tests that do not need exteral JDBC driver and/or a docker container. ' +
-            'This includes integration plain tests and unit tests'TestDirCleanupHook
+            'This includes integration plain tests and unit tests'
     include ''
-    dependsOn 'integrationPlainTest', 'unitTest', 'kerberizedTest'
 }
+test.finalizedBy(integrationPlainTest, unitTest, kerberizedTest)
+
+task sqoopTest (type: Test){
+    description 'Run all Sqoop tests'
+    include ''
+}
+sqoopTest.finalizedBy(test, kerberizedTest, thirdPartyTest)
 
 def testBuildDir = "$buildDir/test/"
 def testBuildDirData ="$testBuildDir/data/"
