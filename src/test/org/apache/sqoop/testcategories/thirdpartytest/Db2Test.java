@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.thirdpartytest;
 
+/**
+ * A DB2 test shall test scenarios where a DB2 driver and/or external instance is required.
+ */
 public interface Db2Test extends ThirdPartyTest {
 }

@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.sqooptest;
 
+/**
+ * Deprecated category, shall not be used nor extended.
+ */
 public interface ManualTest extends IntegrationTest {
 }
