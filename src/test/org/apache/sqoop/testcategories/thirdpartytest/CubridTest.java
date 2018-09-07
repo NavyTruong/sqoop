@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.thirdpartytest;
 
+/**
+ * A CubridTest shall test scenarios where a Cubrid driver and/or external instance is required.
+ */
 public interface CubridTest extends ThirdPartyTest {
 }

@@ -211,9 +211,9 @@ task mySQLTest (type: Test) {
 
 test {
     description 'Run tests that do not need exteral JDBC driver and/or a docker container. ' +
-            'This includes integration plain tests and unit tests'
+            'This includes integration plain tests and unit tests'TestDirCleanupHook
     include ''
-    dependsOn 'integrationPlainTest', 'unitTest'
+    dependsOn 'integrationPlainTest', 'unitTest', 'kerberizedTest'
 }
 
 def testBuildDir = "$buildDir/test/"

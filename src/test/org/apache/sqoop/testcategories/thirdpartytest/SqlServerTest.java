@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.thirdpartytest;
 
+/**
+ * An SqlServer test shall test scenarios where a SqlServer driver and/or external instance is required.
+ */
 public interface SqlServerTest extends ThirdPartyTest {
 }

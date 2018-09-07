@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories;
 
+/**
+ * A kerberized test shall run in kerberized environment thus it starts mini KDC server.
+ */
 public interface KerberizedTest {
 }

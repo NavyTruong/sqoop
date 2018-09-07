@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.thirdpartytest;
 
+/**
+ * An Oracle test shall test scenarios where a Oracle driver and/or external instance is required.
+ */
 public interface OracleTest extends ThirdPartyTest {
 }

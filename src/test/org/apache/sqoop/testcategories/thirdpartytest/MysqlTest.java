@@ -17,5 +17,8 @@
  */
 package org.apache.sqoop.testcategories.thirdpartytest;
 
+/**
+ * A MySql test shall test scenarios where a MySql driver and/or external instance is required.
+ */
 public interface MysqlTest extends ThirdPartyTest {
 }
