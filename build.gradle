@@ -270,8 +270,10 @@ checkstyle {
     toolVersion checkstyleVersion
 }
 
-jacocoTestReport {
+task jacocoTestReport {
     description "Generates a coverage report of the unit test results under $buildDir/jacocoHtml/test/index.html"
+    sourceSets sourceSets.main
+    executionData test
     reports {
         xml.enabled true
         csv.enabled false
