@@ -185,6 +185,8 @@ task integrationPlainTest(type: Test) {
 
 task kerberizedTest (type: Test){
     description 'Run Kerberized Test'
+    // A Gradle test task with forkEvery 1 and includeCategories performs poorly because it starts a new JVM even for the filtered tests.
+    // To work around this performance problem we need to add every kerberized test in a separate include field here.
     include '**/TestKerberosAuthenticator*'
     include '**/HBaseKerberizedConnectivityTest*'
     include '**/TestHiveMiniCluster*'
@@ -270,10 +272,8 @@ checkstyle {
     toolVersion checkstyleVersion
 }
 
-task jacocoSqoopTestReport(type: JacocoReport){
+jacocoTestReport {
     description "Generates a coverage report of the unit test results under $buildDir/jacocoHtml/test/index.html"
-    sourceSets sourceSets.main
-    executionData test
     reports {
         xml.enabled true
         csv.enabled false
