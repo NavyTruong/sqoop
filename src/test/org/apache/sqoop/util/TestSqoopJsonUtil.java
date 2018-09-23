@@ -23,7 +23,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.apache.sqoop.testcategories.sqooptest.UnitTest;
 import org.junit.BeforeClass;
 import org.junit.Test;

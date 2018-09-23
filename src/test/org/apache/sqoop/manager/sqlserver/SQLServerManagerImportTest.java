@@ -29,6 +29,7 @@ import org.apache.sqoop.manager.SQLServerManager;
 import org.apache.sqoop.testcategories.thirdpartytest.SqlServerTest;
 import org.apache.sqoop.testutil.ArgumentArrayBuilder;
 import org.apache.sqoop.testutil.ImportJobTestCase;
+import org.apache.sqoop.util.BlockJUnit4ClassRunnerWithParametersFactory;
 import org.apache.sqoop.util.ExpectedLogMessage;
 import org.apache.sqoop.util.FileListing;
 import org.junit.After;
@@ -55,6 +56,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 @RunWith(Parameterized.class)
+@Parameterized.UseParametersRunnerFactory(BlockJUnit4ClassRunnerWithParametersFactory.class)
 /**
  * Test the SQLServerManager implementation.
  *
