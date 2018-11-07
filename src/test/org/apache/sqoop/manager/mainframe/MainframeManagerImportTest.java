@@ -58,6 +58,7 @@ import static org.junit.Assert.assertTrue;
  * <property name="sqoop.test.mainframe.ftp.dataset.gdg.filename" value="G0001V43" />
  * <property name="sqoop.test.mainframe.ftp.dataset.gdg.md5" value="43eefbe34e466dd3f65a3e867a60809a" />
  */
+
 @Category(MainFrameTest.class)
 public class MainframeManagerImportTest extends ImportJobTestCase {
   private static final Log LOG = LogFactory.getLog(

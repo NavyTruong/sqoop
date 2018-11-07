@@ -38,6 +38,7 @@ import java.sql.Statement;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+
 @Category(IntegrationTest.class)
 public class TestMetastoreConfigurationParameters {
 
