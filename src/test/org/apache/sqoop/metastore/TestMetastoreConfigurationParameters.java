@@ -18,6 +18,7 @@
 
 package org.apache.sqoop.metastore;
 
+import org.apache.sqoop.testcategories.sqooptest.IntegrationTest;
 import org.apache.sqoop.testutil.ArgumentArrayBuilder;
 import org.apache.sqoop.testutil.HsqldbTestServer;
 import org.apache.sqoop.Sqoop;
@@ -26,6 +27,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -37,6 +39,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
+@Category(IntegrationTest.class)
 public class TestMetastoreConfigurationParameters {
 
     private static final int STATUS_FAILURE = 1;
